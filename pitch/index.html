@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Presentation Website Web Communication</title>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+  </head>
+<style>
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+}
+
+.remark-slide-content {
+    background: #f4f9ff;  
+    color: #333;       
+    padding: 2rem;
+    font-size: 1.2em;
+}
+
+h1, h2, h3 {
+    color: #003d75;   
+}
+
+ul li {
+    margin: 0.4em 0;
+}
+
+.center, .middle {
+    text-align: center;
+}
+
+pre, code {
+    background: #ccc;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #c3d4e6;
+    margin: 1.5rem 0;
+}
+
+.tag-box {
+  background: white;
+  border: 1.5px solid #005EB8;
+  border-radius: 6px;
+  padding: 0.10em 0.10em;    
+  margin: 0.4em 0.5em;          
+  font-size: 0.70em;
+  line-height: 1.35;        
+  text-align: justify;    
+  box-shadow: 0 1px 4px rgba(0, 94, 184, 0.08);
+}
+
+.info-box {
+  background: rgba(0, 94, 184, 0.06);
+  border-left: 3px solid #005EB8;
+  padding: 0.6em 0.9em;
+  margin: 0.4em 0.5em;
+  font-size: 0.8em;
+  line-height: 1.4;
+  border-radius: 4px;
+}
+
+</style>
+
+    <textarea id="source">
+
+class: center, middle
+
+# PROJECT 
+# "Web Communication"
+
+### <span style="font-size: 0.8em;">Folin Sara 59003A</span>  
+### <span style="font-size: 0.8em;">University of Milan – Course "Web Communication" (2025/2026)</span>
+
+---
+.center[
+# THE IDEA
+]
+The existing Studio SPP's webpage "https://www.studiosppsrl.it/home" shows several critical problems that affect both user experience and professional communication:
+- **outdated layout** - design from early 2000s
+- **limited visual hierarchy** - important info gets lost
+- **inconsistent structure** - confusing navigation
+- **irregular spacing** - unprofessional appearance
+
+
+The idea behind the redesign was to create a **cleaner, more modern, and more user-friendly interface** that communicates reliability and clarity.
+
+---
+.center[
+# TECHNOLOGY USED
+]
+<span style="font-size: 1.3em; font-weight: bold;">HTML</span> to structure the entire webpage and creating two html files: index.html as the main homepage and servizi/index.html as the services section 
+
+.tag-box[
+**Semantic structure:** `<header>`, `<nav>`, `<section>`, `<footer>`
+]
+.tag-box[
+**Navigation with dropdown:** `<ul class="submenu">` nested inside `<li class="dropdown">`
+]
+.tag-box[
+**Interactive links:** `<a href="tel:+390434873160">` 
+for phone numbers `<a href="mailto:info@studiosppsrl.it">` for email
+] 
+.tag-box[
+**Google Maps embed:** `<iframe>` for location display
+]
+.tag-box[
+**Text formatting:** `<strong>`, `<em>`, `<i>`, `<b>` for emphasis `<ul>`, `<ol>`, `<li>` for lists
+]
+
+---
+
+.center[
+# TECHNOLOGY USED
+]
+<span style="font-size: 1.3em; font-weight: bold;">CSS</span> to style the page and define its visual identity, managing layout, colors, typography, spacing and responsive behavior.
+
+.tag-box[
+**Layout structure:** `display: flex`, `justify-content`, `align-items` for modern and flexible layouts
+]
+
+.tag-box[
+**Responsive design:** `@media (max-width: 768px)` and `@media (max-width: 900px)` for mobile and tablet adaptation
+]
+
+.tag-box[
+**Interactive navigation:** `.menu a::after` pseudo-element used to create an expanding underline animation on hover
+]
+
+.tag-box[
+**Fixed elements:** `position: fixed` for the navigation bar and floating contact button
+]
+
+.tag-box[
+**Transitions and effects:** `transition: 0.25s` applied to interactive elements for smoother user experience
+]
+
+---
+
+.center[
+# TECHNOLOGY USED
+]
+<span style="font-size: 1.3em; font-weight: bold;">JavaScript</span> to manage dynamic elements and user interaction, creating a floating contact button and an online request modal.
+
+.tag-box[
+**Dynamic DOM creation:** `document.createElement()` and `innerHTML` used to generate the floating button and contact modal directly via JavaScript
+]
+
+.tag-box[
+**Event handling:** `addEventListener()` to manage button click, modal open/close and form submission
+]
+
+.tag-box[
+**UX feedback:** timed confirmation message with `setTimeout()` and automatic reset of the form and interface
+]
+
+---
+.center[
+# LONG-TERM PLANS
+]
+
+In the long term, the goal is to **compare this data with the results generated through word-of-mouth communication.**
+
+- transform it into a **measurable, data-driven** communication tool
+- integrate **analytics tools** such as number of visitors, analyzing traffic sources, and measuring how long people stay on the page
+
+
+
+    </textarea>
+
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
